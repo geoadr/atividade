@@ -1,0 +1,271 @@
+11/
+public class algoritimo11 {
+    public static void main(String[] args) {
+        int x = 2;         
+        x++;             
+        int y = x;        
+        y--;               
+
+        System.out.println("Aprendendo Algoritmo!!!");
+        System.out.println("Valor de x: " + x);
+        System.out.println("Valor de y: " + y);
+    }
+}
+
+12/
+public class algoritimo12 {
+    public static void main(String[] args) {
+        System.out.println("Aprendendo Algoritmo");
+        System.out.println("Com Anita e Guto");
+    }
+}
+
+16/
+public class algoritimo16 {
+    public static void main(String[] args) {
+        int x; 
+        x = 10; 
+    
+        System.out.println(x);
+    }
+}
+
+18/
+public class Algoritmo18 {
+    public static void main(String[] args) {
+        int x;  
+        x = 10;  
+        
+        
+        System.out.println("Valor de x = " + x);
+        
+      
+        x = x + 1;
+        
+       
+        System.out.println("Valor de x = " + x);
+    }
+}
+
+23/
+import java.util.Scanner;
+
+public class Algoritmo23 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite número de três casas: ");
+        int d = (scanner.nextInt() % 100) / 10; 
+        
+        System.out.println("Algarismo da casa das dezenas: " + d);
+        
+        scanner.close();
+    }
+}
+
+25/
+import java.util.Scanner;
+
+public class Algoritmo25 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite data no formato ddmmaa: ");
+        int data = scanner.nextInt();
+
+        int dia = data / 10000;          
+        int mes = (data % 10000) / 100; 
+        int ano = data % 100;          
+
+        System.out.println("\nDIA: " + dia);
+        System.out.println("MES: " + mes);
+        System.out.println("ANO: " + ano);
+
+        scanner.close();
+    }
+}
+
+26/
+import java.util.Scanner;
+
+public class Algoritmo26 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite data no formato DDMMAA: ");
+        int data = scanner.nextInt();
+
+        int dia = data / 10000;          
+        int mes = (data % 10000) / 100;  
+        int ano = data % 100;           
+
+ 
+        int ndata = mes * 10000 + dia * 100 + ano;
+
+      
+        System.out.println("\nDIA: " + dia);
+        System.out.println("MES: " + mes);
+        System.out.println("ANO: " + ano);
+        System.out.println("\nDATA NO FORMATO MMDDYY: " + ndata);
+
+        scanner.close();
+    }
+}
+
+27/
+public class Algoritmo27 {
+    public static void main(String[] args) {
+        int x = 2, y = 5;  
+
+        System.out.println("x = " + x);  
+        System.out.println("\ny = " + y); 
+
+        System.out.println("\nNovo valor de x = " + ++x);  
+        System.out.println("Novo valor de y = " + --y);  
+    }
+}
+
+31/
+public class Algoritmo31 {
+    public static void main(String[] args) {
+        double ma = (8 + 9 + 7) / 3.0;  
+
+        System.out.println("\nA media aritmetica e: " + ma);
+    }
+}
+
+40/
+import java.util.Scanner;
+
+public class Algoritmo40 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Entre com o dividendo: ");
+        int vali = scanner.nextInt();
+        System.out.print("Entre com o divisor: ");
+        int val2 = scanner.nextInt();
+
+     
+        System.out.println("\nDividendo: " + vali);
+        System.out.println("Divisor: " + val2);
+        System.out.println("Quociente: " + (vali / val2));
+        System.out.println("Resto: " + (vali % val2));
+
+        scanner.close();
+    }
+}
+
+41/
+import java.util.Scanner;
+
+public class Algoritmo41 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\nMédia ponderada: " + ((scanner.nextDouble() * 1 + scanner.nextDouble() * 2 + scanner.nextDouble() * 3 + scanner.nextDouble() * 4) / 10));
+
+        scanner.close();
+    }
+}
+
+42/
+import java.util.Scanner;
+
+public class Algoritmo42 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um ângulo em graus: ");
+        double angulo = scanner.nextDouble();
+
+        double rang = Math.toRadians(angulo);
+
+        System.out.println("\nSeno: " + Math.sin(rang));
+        System.out.println("Cosseno: " + Math.cos(rang));
+        System.out.println("Tangente: " + Math.tan(rang));
+        System.out.println("Co-secante: " + (1 / Math.sin(rang)));
+        System.out.println("Secante: " + (1 / Math.cos(rang)));
+        System.out.println("Cotangente: " + (1 / Math.tan(rang)));
+
+        scanner.close();  
+    }
+}
+
+43/
+import java.util.Scanner;
+
+public class Algoritmo43 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Entre com o logaritmando: ");
+        double num = scanner.nextDouble();
+
+        double logaritmo = Math.log(num) / Math.log(10);
+
+        System.out.println("\nLogaritmo: " + logaritmo);
+
+        scanner.close();  // Fecha o scanner
+    }
+}
+
+44/
+import java.util.Scanner;
+
+public class Algoritmo44 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Entre com o logaritmando: ");
+        double num = scanner.nextDouble();
+
+        System.out.print("Entre com a base: ");
+        double base = scanner.nextDouble();
+
+        double logaritmo = Math.log(num) / Math.log(base);
+
+        System.out.println("\nO logaritmo de " + num + " na base " + base + " é: " + logaritmo);
+
+        scanner.close();
+    }
+}
+
+46/
+import java.util.Scanner;
+
+public class Algoritmo46 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite saldo: ");
+        double saldo = scanner.nextDouble();
+
+        double nsaldo = saldo * 1.01;
+
+        System.out.println("\nNovo saldo: " + nsaldo);
+
+        scanner.close();  
+    }
+}
+
+48/
+import java.util.Scanner;
+
+public class Algoritmo48 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Entre com o salário mínimo: ");
+        double sm = sc.nextDouble();
+        System.out.print("Entre com a quantidade em quilowatt: ");
+        double qt = sc.nextDouble();
+
+        double preco = sm / 700;
+        double vp = preco * qt;
+
+        System.out.println("\nPreço do quilowatt: " + preco +
+                           "\nValor a ser pago: " + vp +
+                           "\nValor com desconto: " + (vp * 0.9));
+        sc.close();
+    }
+}
